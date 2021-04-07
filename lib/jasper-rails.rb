@@ -25,7 +25,7 @@ require "rails"
 require "nokogiri"
 require "rjb"
 require "rjb-loader"
-require "action_controller/metal/responder"
+require "action_controller/responder"
 require "active_support/core_ext"
 
 require "jasper-rails/abstract_renderer"
@@ -33,7 +33,6 @@ require "jasper-rails/jasper_reports_renderer"
 require "jasper-rails/default_renderer"
 
 module JasperRails
-
   class << self
     attr_accessor :config
   end
